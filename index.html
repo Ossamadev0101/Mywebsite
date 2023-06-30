@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<STYLE>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            color: purple;
+            text-align: center;
+        }
+        
+        p {
+            color: #333;
+            line-height: 1.5;
+        }
+        
+        span#counter {
+            color: purple;
+            font-weight: bold;
+        }
+        
+        button#registerBtn {
+            background-color: purple;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+        button#registerBtn:disabled {
+            background-color: gray;
+            cursor: not-allowed;
+        }
+    </STYLE>
+    <title>
+شركة تبحث عن العمال جميع رخص السياقة
+</title>
+    <script>
+        function countdown() {
+            var counter = 30;
+            var interval = setInterval(function() {
+                counter--;
+                if (counter < 0) {
+                    clearInterval(interval);
+                    document.getElementById("registerBtn").disabled = false;
+                } else {
+                    document.getElementById("counter").innerHTML = counter;
+                }
+            }, 1000);
+        }
+    </script>
+</head>
+<body onload="countdown()">
+    <h1>مرحبًا بك نحن نبحث عن عمال جدد من مختلف مناطق المملكة</h1>
+    <p>الشركة
+بلاغ توظيف
+
+تعلن شركة مشتقات الحليب، الرائدة في صناعة منتجات الألبان، عن فتح باب التوظيف لملء 500 وظيفة في مختلف مناطق المملكة.
+
+الوظائف المتاحة:
+- عامل إنتاج
+- فني صيانة
+- سائق التوزيع
+- عامل تعبئة وتغليف
+
+المتطلبات:
+- شهادة متوسطة كحد أدنى.
+- خبرة سابقة في المجال ذات صلة تعتبر إضافة.
+- القدرة على العمل بشكل جيد في فريق.
+- مهارات تواصل جيدة.</p>
+<p> 
+	المزايا:
+- رواتب مجزية تتراوح بين 3700 درهم و7200 درهم حسب الوظيفة والخبرة.
+- تأمين صحي شامل للموظفين.
+- بيئة عمل محفزة وفرص للتطور المهني.
+- تدريب وتطوير مستمر.
+- فرصة للعمل في شركة رائدة في صناعة المنتجات الألبان.
+
+للتقدم لهذه الوظائف المثيرة والحصول على فرصة للعمل معنا، يُرجى إرسال سيرتك الذاتية عبر الضغط على زر تسجيل
+	</p>
+    <p>سيتم تحويلك إلى صفحة التسجيل بعد <span id="counter">30</span> ثانية</p>
+   
+    <button id="registerBtn" disabled>تسجيل</button>
+    <script>
+        document.getElementById("registerBtn").onclick = function() {
+            window.location.href = "index2.html";
+        };
+    </script>
+</body>
+</html>
